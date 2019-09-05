@@ -1,8 +1,8 @@
-import urllib
+import urllib.request
 import re
 import pickle
 
-text = urllib.urlopen('http://www.pythonchallenge.com/pc/def/banner.p').read()
+text = urllib.request.urlopen('http://www.pythonchallenge.com/pc/def/banner.p').read()
 data = pickle.loads(text)
 
 for row in data:
